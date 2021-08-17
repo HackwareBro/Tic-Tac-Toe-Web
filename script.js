@@ -1,4 +1,11 @@
+var first_turn = false
 function change(){
-    document.activeElement.className = 'circle';
-
+    if (first_turn == false){
+        document.activeElement.className = 'circle';
+        first_turn = true;
+    }
+    else{
+        document.activeElement.className = 'cross';
+        first_turn = false;
+    }
 }
