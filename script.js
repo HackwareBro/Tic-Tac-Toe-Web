@@ -29,7 +29,7 @@ function checkWin(player){
             }
         }
         if(rowComplete == true || colComplete == true){
-            document.getElementById('result').innerHTML = 'won';
+            document.getElementById('result').innerHTML = player +' won';
             break;
         }
     }
