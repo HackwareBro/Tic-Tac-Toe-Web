@@ -9,6 +9,9 @@ button{
     margin: 30px;
 
 }
+table{
+    margin : 0 auto; 
+}
 .cross{
     transition: 0.5s;
     transform: rotate(45deg);
@@ -30,6 +33,23 @@ a:hover{
     color : white;
     text-align: center;
 }
+#result, #modebox{  /* to center the elements */
+    text-align: center;
+    margin: 0% auto;
+}
+input{
+    margin: 20px;
+}
+#startbtn{
+    font-size: large;
+    padding: 10px;
+    margin-left: 25px;
+}
+#startbtn:active{
+    color: azure;
+    background-image: linear-gradient(black,grey);
+}
+
 @media screen and (max-width: 700px) {
     button{
         width: 70px;
