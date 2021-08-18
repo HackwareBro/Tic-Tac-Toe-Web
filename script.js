@@ -25,7 +25,24 @@ function change(){
 }
 
 function cpuMode(){
-
+    if(document.activeElement.className ==  'empty'){
+        // player turn
+        document.activeElement.className = 'circle';    
+        checkWin('circle');
+        // cpu turn algo
+        if(game_started == true){   // To stop CPU turn when player won the game
+            cpu_turn = false;
+            while(cpu_turn == false){
+                randomPlace = Math.trunc((Math.random() * 9) + 1) 
+                place = document.getElementById(randomPlace)
+                if(place.className == 'empty'){
+                    place.className = 'cross';
+                    cpu_turn = true;
+                }
+            }
+            checkWin('cross');
+        }
+    }
 }
 
 function twoPlayerMode(){
@@ -54,6 +71,8 @@ function checkWin(player){
         }
         if(rowComplete == true || colComplete == true){
             document.getElementById('result').innerHTML = player +' won';
+            game_started = false;
+            document.getElementById('modebox').style.display = 'block';
             break;
         }
     }
