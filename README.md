@@ -1,10 +1,10 @@
 # Tic-Tac-Toe Web
 Just practicing my web development skills by making this project and polishing my programming logics skills.
 
-<b>This will update time to time!</b>
+<b>This will be updated time to time!</b>
 
 ## Usage
-Just Visit the website : https://hackwarebro.github.io/Tic-Tac-Toe-Web/
+Just Visit the webpage : https://hackwarebro.github.io/Tic-Tac-Toe-Web/
 
 This tic-tac-toe supports 2 player and CPU mode to play.
 CPU mode is based on random function not based on any AI.
